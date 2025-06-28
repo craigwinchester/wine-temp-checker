@@ -80,7 +80,8 @@ Shipping wine in hot weather can ruin the product. This plugin gives the custome
 
 ## License
 
-MIT – Do what you want, just don’t blame us if your wine gets cooked.
+**GNU General Public License v2.0**
+Do what you want, just don’t blame us if your wine gets cooked.
 
 ---
 
