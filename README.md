@@ -45,8 +45,11 @@ This plugin helps protect your wine shipments by checking the weather forecast a
 ## Forecast Chart Example
 
 06/28: ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 87°F
+
 06/29: ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 92°F 
+
 06/30: ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 94°F
+
 07/01: ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 89°F
 
 ---
