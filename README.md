@@ -31,16 +31,16 @@ This plugin helps protect your wine shipments by checking the weather forecast a
 
 ## Installation
 
-1. Upload the plugin folder to `/wp-content/plugins/`
-2. Activate it via the WordPress Plugins screen
-3. Navigate to **WooCommerce > Shipping Temp Check**
-4. Enter:
+1. download the .zip file from here
+2. Upload the plugin folder to `/wp-content/plugins/`
+3. Activate it via the WordPress Plugins screen
+4. Navigate to **WooCommerce > Shipping Temp Check**
+5. Enter:
    - OpenWeatherMap API Key
    - UPS OAuth credentials
    - Your shipping origin ZIP code
    - Temp threshold (default: 85°F)
-
----
+6. Sell wine & Profit!
 
 ## Forecast Chart Example
 
