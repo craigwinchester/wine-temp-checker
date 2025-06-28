@@ -225,12 +225,6 @@ function wtc_show_warning_and_options() {
                 $bar_length = max(0, min(30, intval(($t - 60) * 0.75)));
                 $bar = str_repeat("▓", $bar_length);
                 echo sprintf("%s: %-30s %s°F\n", $dayname, $bar, round($t));
-
-                if ($date === $arrival_date) {
-                    echo "<span style='color:gold; font-weight:bold;'>$formatted ← Estimated Arrival</span>\n";
-                } else {
-                    echo "$formatted\n";
-                }
                     
             }
             echo "</pre><br>";
