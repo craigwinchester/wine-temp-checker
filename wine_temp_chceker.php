@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Wine Shipping Temperature Checker
  * Description: Warns customers if the forecasted temperature at their shipping address is too high for wine shipping. Offers handling options and stores choice in the order. Includes admin settings.
- * Version: 1.9
+ * Version: 1.10
  * Author: Lo-Fi Wines
  */
 
@@ -217,12 +217,21 @@ function wtc_show_warning_and_options() {
             echo "<strong>📊 7-Day Forecast:</strong><br>";
             echo "<pre style='font-family:monospace; margin-top:5px;'>";
             $day_counter = 0;
+            $max_days = 8;
             foreach ($highs as $date => $t) {
-                if (++$day_counter > 7) break;
+                if (++$day_counter >=  $max_days) break;
+
                 $dayname = date('m/d', strtotime($date));
                 $bar_length = max(0, min(30, intval(($t - 60) * 0.75)));
                 $bar = str_repeat("▓", $bar_length);
                 echo sprintf("%s: %-30s %s°F\n", $dayname, $bar, round($t));
+
+                if ($date === $arrival_date) {
+                    echo "<span style='color:gold; font-weight:bold;'>$formatted ← Estimated Arrival</span>\n";
+                } else {
+                    echo "$formatted\n";
+                }
+                    
             }
             echo "</pre><br>";
 
